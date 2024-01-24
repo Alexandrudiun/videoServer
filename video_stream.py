@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Assuming the video files are located in the same directory as this script
 VIDEO_FOLDER = os.path.dirname(os.path.abspath(__file__))
 # Specify your default video file name here
-DEFAULT_VIDEO_FILE = 'Hacksaw.Ridge.2016.Hybrid.720p.BluRay.DD+5.1.x264-playHD.mkv'
+DEFAULT_VIDEO_FILE = 'Specify your default video file name here'
 
 @app.route('/stream', defaults={'filename': DEFAULT_VIDEO_FILE})
 @app.route('/stream/<filename>')
